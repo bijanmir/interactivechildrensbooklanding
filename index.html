@@ -19,11 +19,32 @@
 </head>
 <body>
 
+  <!-- INLINE SVG DEFS -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+    <symbol id="i-apple" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></symbol>
+    <symbol id="i-paw" viewBox="0 0 24 24"><path d="M12 18.5c-2.5 0-4.5-1.5-5.5-3.5-.6-1.2-.3-2.7.8-3.5 1.5-1.1 3-1.5 4.7-1.5s3.2.4 4.7 1.5c1.1.8 1.4 2.3.8 3.5-1 2-3 3.5-5.5 3.5z"/><ellipse cx="7.5" cy="7" rx="2" ry="2.5" transform="rotate(-15 7.5 7)"/><ellipse cx="10.5" cy="4.5" rx="1.8" ry="2.3"/><ellipse cx="14" cy="4.5" rx="1.8" ry="2.3"/><ellipse cx="17" cy="7" rx="2" ry="2.5" transform="rotate(15 17 7)"/></symbol>
+    <symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10c1.38 0 2.5-1.12 2.5-2.5 0-.61-.23-1.2-.64-1.67a.528.528 0 01.12-.68c.29-.22.62-.13.82.12.62.78 1.53 1.23 2.5 1.23 2.21 0 4-2.01 4-4.5C22 6.04 17.51 2 12 2zM6.5 13a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm3-4a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm5 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm3 4a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/></symbol>
+    <symbol id="i-hash" viewBox="0 0 24 24"><path d="M10 3L8 21M16 3l-2 18M3.5 9h17M3.5 15h17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 12.5l2.5 2.5 5-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 12.5l2.5 2.5 5-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 010 7.07M19.07 4.93a10 10 0 010 14.14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-device" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="18" r="1"/><line x1="9" y1="5" x2="15" y2="5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-baby" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 14c-4.42 0-8 2.24-8 5v1h16v-1c0-2.76-3.58-5-8-5z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="10" cy="8.5" r="0.8"/><circle cx="14" cy="8.5" r="0.8"/><path d="M10 11c.5.6 1.2 1 2 1s1.5-.4 2-1" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6" cy="18" r="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="16" r="3" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 000-7.78z"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2V3zM22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7V3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-tap" viewBox="0 0 24 24"><path d="M8 13V4.5a1.5 1.5 0 013 0V12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M11 11.5V10a1.5 1.5 0 013 0v1.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M14 12v-1a1.5 1.5 0 013 0v1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M17 12a1.5 1.5 0 013 0v4a6 6 0 01-6 6h-2a6 6 0 01-5.69-4.1L5 13.5a1.5 1.5 0 012.47-1.15L8 13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 2l2.09 6.26L20 10l-5.91 1.74L12 18l-2.09-6.26L4 10l5.91-1.74L12 2z"/><path d="M19 15l1.04 3.13L23 19l-2.96.87L19 23l-1.04-3.13L15 19l2.96-.87L19 15z" opacity=".6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M22 6l-10 7L2 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
   <!-- NAV -->
   <nav class="nav">
     <div class="nav-inner">
       <a href="/" class="nav-logo">Tappadoo</a>
-      <a href="#try" class="nav-cta">Try It Free →</a>
+      <a href="#try" class="nav-cta">Try It Free <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
     </div>
   </nav>
 
@@ -37,17 +58,20 @@
     </div>
     <div class="hero-inner">
       <div class="hero-text">
-        <div class="hero-badge">Free Interactive Children's Books</div>
+        <div class="hero-badge">
+          <svg width="13" height="13" style="fill:currentColor; opacity:0.55;"><use href="#i-sparkle"/></svg>
+          Free Interactive Children's Books
+        </div>
         <h1>Where Every Tap<br>Sparks Discovery</h1>
         <p class="hero-sub">Tappadoo is a free collection of interactive books for babies and toddlers. Tap to reveal animals, colors, numbers, and surprises — with sounds, speech, and playful animations.</p>
         <div class="hero-actions">
-          <a href="#try" class="btn btn-primary">Try It Free</a>
-          <a href="#books" class="btn btn-secondary">See the Books</a>
+          <a href="#try" class="btn btn-primary">Try It Free <svg width="16" height="16"><use href="#i-arrow"/></svg></a>
+          <a href="#books" class="btn btn-secondary"><svg width="16" height="16"><use href="#i-book"/></svg> See the Books</a>
         </div>
         <div class="hero-trust">
-          <span class="trust-item">✓ 100% Free</span>
-          <span class="trust-item">✓ No Ads</span>
-          <span class="trust-item">✓ No Sign Up</span>
+          <span class="trust-item"><svg width="15" height="15" class="trust-icon"><use href="#i-check"/></svg> 100% Free</span>
+          <span class="trust-item"><svg width="15" height="15" class="trust-icon"><use href="#i-shield"/></svg> No Ads</span>
+          <span class="trust-item"><svg width="15" height="15" class="trust-icon"><use href="#i-check"/></svg> No Sign Up</span>
         </div>
       </div>
       <div class="hero-visual">
@@ -59,10 +83,7 @@
               <div class="demo-float demo-f2">🌻</div>
               <div class="demo-float demo-f3">☀️</div>
               <p class="demo-question">Who munches grass<br>all day long?</p>
-              <div class="demo-tap-circle">
-                <span>?</span>
-                <small>Tap me!</small>
-              </div>
+              <div class="demo-tap-circle"><span>?</span><small>Tap me!</small></div>
             </div>
           </div>
         </div>
@@ -76,28 +97,27 @@
       <div class="section-label">The Bookshelf</div>
       <h2>4 Interactive Books. Infinite Giggles.</h2>
       <p class="section-sub">Each book teaches through a different tap-to-discover mechanic designed for tiny fingers.</p>
-
       <div class="book-grid">
-        <div class="book-item" style="--accent: #FFD6E0; --accent-deep: #FF9BB3;">
-          <div class="book-item-icon">🐾</div>
+        <div class="book-item" style="--accent:#FFD6E0;--accent-deep:#FF9BB3;">
+          <div class="book-item-icon" style="background:linear-gradient(135deg,#FFECD2,#FFD6E0);"><svg width="28" height="28" style="fill:var(--text);"><use href="#i-paw"/></svg></div>
           <div class="book-item-num">Book 1</div>
           <h3>Who Says That?</h3>
           <p>Tap to reveal animals and hear their sounds. Moo! Woof! Quack!</p>
         </div>
-        <div class="book-item" style="--accent: #C5E4F7; --accent-deep: #7BBEE8;">
-          <div class="book-item-icon">🎨</div>
+        <div class="book-item" style="--accent:#C5E4F7;--accent-deep:#7BBEE8;">
+          <div class="book-item-icon" style="background:linear-gradient(135deg,#C5E4F7,#E8D5F5);"><svg width="28" height="28" style="fill:var(--text);"><use href="#i-palette"/></svg></div>
           <div class="book-item-num">Book 2</div>
           <h3>What Color Is That?</h3>
           <p>Discover 6 colors with fun objects and rhymes. Red apple! Blue whale!</p>
         </div>
-        <div class="book-item" style="--accent: #E8D5F5; --accent-deep: #C9A0E8;">
-          <div class="book-item-icon">🔢</div>
+        <div class="book-item" style="--accent:#E8D5F5;--accent-deep:#C9A0E8;">
+          <div class="book-item-icon" style="background:linear-gradient(135deg,#E8D5F5,#FFD6E0);"><svg width="28" height="28" style="fill:none;stroke:var(--text);stroke-width:2;"><use href="#i-hash"/></svg></div>
           <div class="book-item-num">Book 3</div>
           <h3>How Many Do You See?</h3>
           <p>Count from 1 to 5 with bouncing stars, bunnies, and balloons.</p>
         </div>
-        <div class="book-item" style="--accent: #C5F0D6; --accent-deep: #7DD4A0;">
-          <div class="book-item-icon">👀</div>
+        <div class="book-item" style="--accent:#C5F0D6;--accent-deep:#7DD4A0;">
+          <div class="book-item-icon" style="background:linear-gradient(135deg,#C5F0D6,#C5E4F7);"><svg width="28" height="28" style="fill:var(--text);stroke:var(--text);"><use href="#i-eye"/></svg></div>
           <div class="book-item-num">Book 4</div>
           <h3>Where Did It Go?</h3>
           <p>Peek-a-boo! Lift the hat, blanket, and cloud to find who's hiding.</p>
@@ -113,17 +133,17 @@
       <h2>Built for Tiny Hands</h2>
       <div class="how-grid">
         <div class="how-step">
-          <div class="how-num">1</div>
+          <div class="how-icon"><svg width="26" height="26" style="fill:none;stroke:var(--text);stroke-width:1.8;"><use href="#i-book"/></svg></div>
           <h3>Pick a Book</h3>
           <p>Choose from the bookshelf — animals, colors, counting, or peek-a-boo.</p>
         </div>
         <div class="how-step">
-          <div class="how-num">2</div>
+          <div class="how-icon"><svg width="26" height="26" style="fill:none;stroke:var(--text);stroke-width:1.8;"><use href="#i-tap"/></svg></div>
           <h3>Tap to Discover</h3>
           <p>Each page has a mystery. Tap the circle to reveal what's hiding inside.</p>
         </div>
         <div class="how-step">
-          <div class="how-num">3</div>
+          <div class="how-icon"><svg width="26" height="26" style="fill:var(--text);"><use href="#i-sound"/></svg></div>
           <h3>Hear & Learn</h3>
           <p>Animals speak, colors are named, numbers are counted — all through playful sounds.</p>
         </div>
@@ -136,32 +156,32 @@
     <div class="section-inner">
       <div class="features-grid">
         <div class="feature">
-          <div class="feature-icon">🔇</div>
+          <div class="feature-icon-wrap" style="--fi-bg:#E8F5E9;"><svg width="22" height="22" style="fill:none;stroke:#2E7D32;"><use href="#i-shield"/></svg></div>
           <h3>Zero Ads. Ever.</h3>
           <p>No pop-ups, no banners, no distractions. Just books.</p>
         </div>
         <div class="feature">
-          <div class="feature-icon">🔊</div>
+          <div class="feature-icon-wrap" style="--fi-bg:#E3F2FD;"><svg width="22" height="22" style="fill:#1565C0;"><use href="#i-sound"/></svg></div>
           <h3>Sounds & Speech</h3>
           <p>Each reveal plays sounds and speaks words aloud to reinforce learning.</p>
         </div>
         <div class="feature">
-          <div class="feature-icon">📱</div>
+          <div class="feature-icon-wrap" style="--fi-bg:#F3E5F5;"><svg width="22" height="22" style="fill:none;stroke:#7B1FA2;"><use href="#i-device"/></svg></div>
           <h3>Works Everywhere</h3>
           <p>iPhone, iPad, Android, laptop — no download needed. Just tap the link.</p>
         </div>
         <div class="feature">
-          <div class="feature-icon">👶</div>
-          <h3>Ages 0-3</h3>
+          <div class="feature-icon-wrap" style="--fi-bg:#FFF3E0;"><svg width="22" height="22" style="fill:none;stroke:#E65100;"><use href="#i-baby"/></svg></div>
+          <h3>Ages 0–3</h3>
           <p>Designed for the youngest learners with big tap targets and simple interactions.</p>
         </div>
         <div class="feature">
-          <div class="feature-icon">🎵</div>
+          <div class="feature-icon-wrap" style="--fi-bg:#FFF8E1;"><svg width="22" height="22" style="fill:none;stroke:#F9A825;"><use href="#i-music"/></svg></div>
           <h3>Sound Toggle</h3>
           <p>Mute everything with one tap for quiet time or NICU visits.</p>
         </div>
         <div class="feature">
-          <div class="feature-icon">❤️</div>
+          <div class="feature-icon-wrap" style="--fi-bg:#FCE4EC;"><svg width="22" height="22" style="fill:#C62828;"><use href="#i-heart"/></svg></div>
           <h3>Made by a Dad</h3>
           <p>Built by a NICU dad for his premature twins. Made with love in San Diego.</p>
         </div>
@@ -173,18 +193,23 @@
   <section class="cta-section" id="try">
     <div class="section-inner">
       <div class="cta-box">
-        <div class="cta-emojis">
-          <span>🐄</span><span>🎨</span><span>🔢</span><span>👀</span>
+        <div class="cta-icons">
+          <svg width="24" height="24" style="fill:#FF9BB3;"><use href="#i-paw"/></svg>
+          <svg width="24" height="24" style="fill:#7BBEE8;"><use href="#i-palette"/></svg>
+          <svg width="24" height="24" style="fill:none;stroke:#C9A0E8;stroke-width:2.5;"><use href="#i-hash"/></svg>
+          <svg width="24" height="24" style="fill:#7DD4A0;stroke:#7DD4A0;"><use href="#i-eye"/></svg>
         </div>
         <h2>Try Tappadoo Right Now</h2>
         <p>No download, no sign up. Just tap and start reading with your little one.</p>
-        <a href="https://tappadoo.vercel.app" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Open Tappadoo →</a>
+        <a href="https://tappadoo.vercel.app" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+          Open Tappadoo <svg width="18" height="18"><use href="#i-arrow"/></svg>
+        </a>
         <div class="cta-coming">
           <div class="app-store-badge">
-            <span class="badge-icon">🍎</span>
-            <div>
-              <small>Coming Soon on the</small>
-              <strong>App Store</strong>
+            <svg class="apple-logo" width="22" height="26" viewBox="0 0 24 24" fill="currentColor"><use href="#i-apple"/></svg>
+            <div class="app-store-text">
+              <span class="app-store-small">Coming Soon on the</span>
+              <span class="app-store-big">App Store</span>
             </div>
           </div>
         </div>
@@ -195,6 +220,7 @@
   <!-- EMAIL SIGNUP -->
   <section class="signup" id="notify">
     <div class="section-inner">
+      <div class="signup-icon"><svg width="28" height="28" style="fill:none;stroke:var(--blush-deep);stroke-width:2;"><use href="#i-mail"/></svg></div>
       <h2>Get Notified When New Books Drop</h2>
       <p>We're adding new books every month — opposites, shapes, bedtime, and more. Be the first to know.</p>
       <form class="signup-form" action="https://formspree.io/f/YOURFORMID" method="POST">
@@ -226,7 +252,6 @@
   </footer>
 
   <script>
-    // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', e => {
         e.preventDefault();
@@ -234,25 +259,13 @@
         if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     });
-
-    // Navbar shrink on scroll
     const nav = document.querySelector('.nav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('nav-scrolled', window.scrollY > 40);
-    });
-
-    // Fade-in on scroll
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
+    window.addEventListener('scroll', () => nav.classList.toggle('nav-scrolled', window.scrollY > 40));
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
-    document.querySelectorAll('.book-item, .how-step, .feature, .cta-box').forEach(el => {
-      el.classList.add('fade-target');
-      observer.observe(el);
+    document.querySelectorAll('.book-item,.how-step,.feature,.cta-box').forEach(el => {
+      el.classList.add('fade-target'); observer.observe(el);
     });
   </script>
 </body>
